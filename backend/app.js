@@ -19,7 +19,10 @@ app.use(express.json());
 app.use(cors());
 
 // Connect to MongoDB
-mongoose.connect('mongodb://127.0.0.1:27017/RegUser');
+require('dotenv').config(); // This loads values from .env into process.env
+
+mongoose.connect(process.env.MONGODB_URI);
+
 
 const db = mongoose.connection;
 
