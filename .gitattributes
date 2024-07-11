@@ -1,20 +1,12 @@
-# Set default behavior to automatically normalize line endings
+# Set the default behavior to automatically normalize line endings.
 * text=auto
 
-# Explicitly declare text files you want to always normalize
-*.c text
-*.cpp text
-*.h text
-*.html text
-*.css text
-*.js text
-*.jsx text
-*.json text
-*.md text
-
-# Declare files that should never be normalized
-*.jpg binary
-*.png binary
-*.gif binary
-*.zip binary
-*.exe binary
+# Define how Git should handle specific file types.
+*.js    text
+*.jsx   text
+*.css   text
+*.html  text
+*.json  text
+*.md    text
+*.sh    text eol=lf
+*.bat   text eol=crlf
