@@ -1,0 +1,43 @@
+/* slash.css */
+.lash-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure the container takes full height of viewport */
+  }
+  
+  .center-container {
+    text-align: center;
+  }
+  
+  .chat-image {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  .styled-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+    margin: 0 10px; /* Adjust margin as needed */
+  }
+  
+  .styled-button:hover {
+    background-color: #45a049;
+  }
+  

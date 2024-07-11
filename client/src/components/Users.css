@@ -1,0 +1,191 @@
+/* Users.css */
+
+.user-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30%; /* Adjust as needed */
+    background-color: #4CAF50; /* Light background color */
+    border-right: 1px solid #ccc; /* Separator line */
+    overflow-y: auto; /* Enable scrolling */
+  }
+  
+  .heading {
+    font-size: 20px;
+    color: #e0e0e0;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .user-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .user-list-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd; /* Divider between list items */
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+    border: 1px solid #000; /* Black border */
+  }
+  
+  .user-list-item:last-child {
+    border-bottom: 1px solid #000; /* Remove border bottom from the last item */
+  }
+  
+  .user-list-item:hover {
+    background-color: #e0e0e0; /* Light background on hover */
+  }
+  
+  .username {
+    font-weight: bold;
+  }
+  
+  .user-details {
+    margin-left: 10px; /* Spacing between avatar and username */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* Ellipsis for long usernames */
+  }
+  
+  .chat-section {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+    border-left: 1px solid #ccc; /* Separator line */
+  }
+  
+  #messages {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #messages li {
+    margin-bottom: 10px;
+  }
+  
+  .msg-container {
+    padding: 10px;
+    background-color: #f1f1f1; /* Background color for the form container */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Shadow for the form container */
+  }
+  
+  #form {
+    display: flex;
+    align-items: center; /* Center items vertically */
+  }
+  
+  #input {
+    flex: 1; /* Take available space */
+    padding: 10px; /* Padding for the input */
+    margin-right: 10px; /* Space between input and buttons */
+    border: 1px solid #ccc; /* Border for the input */
+    border-radius: 4px; /* Rounded corners */
+  }
+  
+  #form button {
+    padding: 10px 15px; /* Padding for the buttons */
+    border: none; /* Remove default border */
+    background-color: #4CAF50; /* Button background color */
+    color: white; /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 4px; /* Rounded corners */
+  }
+  
+  button#toggle-btn {
+    background-color: #f44336; /* Different background color for the disconnect button */
+  }
+  /* new  */
+
+  .message-item {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .message-content {
+    max-width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #dcf8c6; /* Light green background for received messages */
+    margin: 5px;
+    position: relative;
+    word-wrap: break-word;
+  }
+  
+  .message-content strong {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  /* If you want to differentiate between sent and received messages, you can add a class dynamically in your JSX */
+  .message-sent {
+    background-color: #cddcc9;; /* White background for sent messages */
+    align-self: flex-end;
+  }
+  
+  .message-received {
+    background-color: #caf7a8;; /* Light green background for received messages */
+    align-self: flex-start;
+  }
+  
+  /* Add a slight shadow to make messages stand out */
+  .message-content {
+    box-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Adjust padding for better appearance */
+  .message-content {
+    padding: 8px 14px;
+  }
+  
+  /* Make sure text wraps nicely within the message bubble */
+  .message-content {
+    word-wrap: break-word;
+  }
+  
+  .header {
+    background-color: #075e54; /* Example background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    margin: 0; /* Remove any default margin */
+     margin-bottom: 50px ;
+     top:0;
+  }
+  
+  .header h2 {
+    margin: 0; /* Remove any default margin */
+  }
+  
+  .new-user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 8px;
+      border-color: black;
+    background-color: #4ab459; /* Light cyan background */
+    color: #00796b; /* Dark teal text */
+    font-size: 1.1em;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* transition: opacity 0.5s ease-in-out; */
+  }
+
+  
