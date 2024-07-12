@@ -39,7 +39,7 @@ const msgRoute = require('./Routes/usermessage');
 
 // Basic route
 app.get('/', (req, res) => {
-  res.send('Hello World');
+  res.send('Hello My World');
 });
 
 // Use routes
