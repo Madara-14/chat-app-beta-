@@ -16,7 +16,7 @@ function UserPage() {
   const socketRef = useRef(null);
 
   useEffect(() => {
-    axios.get('http://localhost:3001/Users')
+    axios.get('https://chat-app-beta-backend.onrender.com/Users')
       .then(response => {
         setUsers(response.data);
       })
@@ -24,7 +24,7 @@ function UserPage() {
         console.error('Error fetching users:', error);
       });
 
-    socketRef.current = io('http://localhost:3001');
+    socketRef.current = io('https://chat-app-beta-backend.onrender.com/');
 
     socketRef.current.on('msg', (data) => {
       setMessages(prevMessages => [...prevMessages, { username: data.username, content: data.message }]);
