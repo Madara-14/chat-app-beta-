@@ -49,7 +49,7 @@ function UserPage() {
   useEffect(() => {
     if (user) {
       // Fetch messages from the backend for the current user
-      axios.get(`http://localhost:3001/messages/${user._id}`)
+      axios.get(`https://chat-app-beta-backend.onrender.com/messages/${user._id}`)
         .then(response => {
           const userMessages = response.data.map(msg => ({ username: msg.person, content: msg.content }));
           setMessages(userMessages);
@@ -69,7 +69,7 @@ function UserPage() {
 
     if (inputMessage.trim()) {
       try {
-        const response = await axios.post('http://localhost:3001/messages', {
+        const response = await axios.post('https://chat-app-beta-backend.onrender.com/messages', {
           userId: user._id,
           content: inputMessage,
           person: username

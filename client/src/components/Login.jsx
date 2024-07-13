@@ -21,7 +21,7 @@ function Login() {
     e.preventDefault();
     // Handle login logic here (e.g., send data to backend)
     // send email n password to the backend to chk if the email , password is correct
-    const res = await axios.post('http://localhost:3001/login', {
+    const res = await axios.post('https://chat-app-beta-backend.onrender.com/login', {
         email,
         password
       });
@@ -30,7 +30,7 @@ function Login() {
     // Example: you can use axios to send login data to backend => res can be used for that whatever response will come from the backend will store in the res variable 
     // getting  data from backend to client 
      
-     if (res.data.message === "Login successful") {
+     if (res.data.message === "Login successful" ) {
         const Allmessages= res.data.user.messages;
          console.log((Allmessages.length));
          for(let i=0; i<Allmessages.length ; i+=2){

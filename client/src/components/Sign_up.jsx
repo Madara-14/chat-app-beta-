@@ -21,7 +21,7 @@ function SignUp() {
     
         
         // get the response from the server 
-   const res = await axios.post('http://localhost:3001/register',{name,email,password})
+   const res = await axios.post('https://chat-app-beta-backend.onrender.com/register',{name,email,password})
      setmsg(res.data.message)
        console.log('data:', res.data);
      if(res.data.message ==='User registered successfully'){
